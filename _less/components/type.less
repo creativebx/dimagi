@@ -1,0 +1,114 @@
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+h1.page_title {
+  font-family: @font-family-sans-serif;
+}
+
+h3 {
+  font-size: 18px;
+
+  @media (min-width: @media-sm-min-width) {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: @media-md-min-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @media-lg-min-width) {
+    font-size: 24px;
+  }
+}
+
+p,
+ul li {
+  font-size: 14px;
+  @media (max-width: @media-sm-max-width) {
+    font-size: 12px;
+  }
+}
+
+.wpb_wrapper p {
+  padding: 10px 0;
+}
+
+.wpb_wrapper .column-image {
+  margin: 1.4em 0;
+}
+
+.wpb_wrapper header {
+  padding-bottom: 15px;
+  padding-top: 20px;
+
+  p {
+    padding-top: 5px;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.entry p {
+  margin-bottom: 10px;
+}
+
+.entry-team p {
+  margin-left: 280px;
+}
+
+.wpb_wrapper p {
+  padding: 0;
+  margin: 0.8em 0;
+}
+
+h3 {
+  margin-top: 0.6em;
+}
+
+.wpb_wrapper h2 {
+  margin: 0.7em 0 0.1em;
+}
+
+.wpb_wrapper h4 {
+  margin: 0.8em 0 0.5em;
+}
+
+.lead p {
+  font-size: 24px;
+  a {
+    font-size: 24px;
+  }
+  font-weight: 300 !important;
+  line-height: 1.2em;
+  margin: 0.4em 0;
+  @media (max-width:  @media-sm-max-width) {
+    font-size: 16px;
+    a {
+      font-size: 16px;
+    }
+  }
+}
+.lead-sub p {
+  font-size: 16px;
+  a {
+    font-size: 16px;
+  }
+  font-weight: 300 !important;
+  line-height: 1.4em;
+  @media (max-width:  @media-sm-max-width) {
+    font-size: 14px;
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+.everything a {
+  color: @c-brand;
+  &:link {
+    cursor: pointer !important;
+  }
+}

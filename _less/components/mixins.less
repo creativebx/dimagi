@@ -1,0 +1,62 @@
+// Single side border-radius: from Twitter Bootstrap
+
+.border-top-radius(@radius) {
+  border-top-right-radius: @radius;
+   border-top-left-radius: @radius;
+}
+.border-right-radius(@radius) {
+  border-bottom-right-radius: @radius;
+     border-top-right-radius: @radius;
+}
+.border-bottom-radius(@radius) {
+  border-bottom-right-radius: @radius;
+   border-bottom-left-radius: @radius;
+}
+.border-left-radius(@radius) {
+  border-bottom-left-radius: @radius;
+     border-top-left-radius: @radius;
+}
+
+
+.make-bg-size(@bgSize) {
+  -webkit-background-size: @bgSize;
+  -moz-background-size: @bgSize;
+  -o-background-size: @bgSize;
+  background-size: @bgSize;
+}
+
+.transition (@prop) {
+  -webkit-transition: @prop; /* Chrome, Safari, Opera */
+  transition: @prop;
+}
+
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.calc-width(@val) {
+  width: calc(@val);
+  width: -webkit-calc(@val);
+  width: -moz-calc(@val);
+  width: -o-calc(@val);
+  width: -ms-calc(@val);
+}

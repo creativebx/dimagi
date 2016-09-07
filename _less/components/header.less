@@ -1,0 +1,139 @@
+.everything .header_container {
+	background-color: @c-bg;
+}
+
+.logo {
+  top: 8px;
+}
+
+header #menulava > .menu-item {
+  line-height: @height-header - 2;
+  > a {
+    padding: 0 10px;
+  }
+}
+
+header #menulava > li {
+  margin: 0;
+  > a {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 0 !important;
+    width: auto;
+    .fa-caret-down {
+      vertical-align: middle;
+      line-height: 50px;
+      padding-top: 3px;
+    }
+  }
+  > a:link, > a:visited, > a {
+    color: @c-neutral-text;
+  }
+}
+
+header .current-menu-item,
+header .current_page_parent {
+  background-color: fade(@c-neutral-bg, 40%);
+  a:link, a:visited, a {
+    color: @c-neutral-text !important;
+    border-bottom: 2px solid fade(@c-neutral, 10%);
+  }
+}
+header .logo_and_menu {
+  padding-top: 0;
+  min-height: @height-header;
+  width: 100%;
+}
+
+header #menu {
+  margin-top: -1px;
+}
+
+#header {
+  height: @height-header;
+}
+
+#searchform_top {
+  padding-top: 8px;
+}
+
+header #menulava .sub-menu > li > a {
+  background-color: @c-bg;
+  border-bottom: none;
+
+  &:hover {
+    color: @c-dark-warm-accent-text;
+  }
+}
+@media (max-width: @media-xs-max-width) {
+  .logo {
+    top: 0px;
+  }
+  #searchform_top {
+    display: none !important;
+  }
+  .headerstyle-style1 header .dl-menuwrapper {
+    display: block;
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: @media-xxs-max-width) {
+  .headerstyle-style1 header .dl-menuwrapper {
+    margin-top: 26px;
+  }
+}
+
+// Our Work
+header .page-176243714 ul {
+  border-top: 2px solid @c-dark-cool-accent;
+}
+
+// About
+header .page-2032 ul {
+  border-top: 2px solid @c-att-pos;
+}
+
+.make-top-menu-item (@color) {
+  > a:hover {
+    border-bottom: 2px solid @color;
+  }
+}
+
+// Dimagi
+header .page-15 {
+  .make-top-menu-item(@c-dark-warm-accent);
+}
+
+// CommCare
+header .page-2315 {
+  .make-top-menu-item(@c-brand);
+}
+
+// Implementation Services
+header .page-2172 {
+  .make-top-menu-item(@c-light-cool-accent-text);
+}
+
+// Blog
+header .page-52 {
+  .make-top-menu-item(@c-light-cool-accent);
+}
+
+.header-image {
+  .make-bg-size(cover);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header-position-top {
+  background-position: center top;
+}
+
+.header-position-middle {
+  background-position: center center;
+}
+
+.header-position-bottom {
+  background-position: center bottom;
+}

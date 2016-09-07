@@ -1,0 +1,254 @@
+
+.blog-rs .postcontent {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.postcontent .meta-list,
+.post-meta-container .meta-list {
+  margin-top: 5px;
+
+  li {
+    list-style: none;
+    margin: 0;
+    line-height: 24px;
+    float: left;
+    white-space: nowrap;
+    margin-right: 15px;
+    vertical-align: middle;
+
+    &.category, &.tags {
+      margin-right: 0;
+      padding: 0;
+      text-transform: uppercase;
+
+      a {
+        display: inline-block;
+        font-size: 10px;
+        background-color: @c-neutral;
+        color: #ffffff;
+        padding: 0px 8px;
+
+        &:hover {
+          text-decoration: none;
+          background-color: @c-brand;
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+  li.tag-icon {
+    margin-right: 5px;
+  }
+  li.tags a {
+    background-color: @c-neutral-text;
+    margin-right: 5px;
+  }
+  .post-categories {
+    margin-top: 0px;
+    li {
+      margin-right: 5px;
+    }
+  }
+}
+
+.postcontent .meta-list-bottom {
+  margin-top: 0;
+  padding-bottom: 30px;
+  .clearfix();
+}
+
+.post-full .thepostcont {
+  width: 100% !important;
+}
+
+.thepostcont p {
+  margin: 10px 0;
+  a {
+    color: @c-brand;
+  }
+}
+
+.post-meta-container {
+  background-color: @c-bg;
+  padding: 10px 12px 12px;
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+
+  .data.author-image a {
+    width: 96px;
+    height: 96px;
+  }
+
+  .meta-list {
+    float:right;
+    .post-author,
+    .comments,
+    .tag-icon {
+      clear: left;
+    }
+    .post-date, .post-author, .post-author a {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}
+
+h3#reply-title {
+  font-size: 20px !important;
+}
+
+.social-identity img {
+  float: left;
+}
+
+.single #commentform p.social-input-row,
+.single #commentform p.form-submit{
+  clear: none;
+  font-size: 14px;
+  padding-left: 66px;
+  textarea {
+    width: 100%;
+    font-size: 14px;
+    color: @c-neutral-text;
+    margin-bottom: 0;
+  }
+  input {
+    cursor: hand;
+  }
+}
+
+#social-tabs-comments {
+  > ul > li {
+    float: left;
+    list-style: none;
+  }
+}
+
+.single #commentform label {
+  clear: none;
+}
+
+#commentform .form-submit #submit {
+  height: auto;
+  background: none;
+   .mk-btn();
+  width: auto;
+  background-color: @c-bg;
+  color: @c-neutral-text;
+  cursor: pointer !important;
+  margin-top: 0 !important;
+  line-height: 28px;
+  &:hover {
+    background-color: @c-att-pos;
+    color: #ffffff;
+  }
+}
+.logged-in #social #respond .form-submit {
+  padding-left: 66px;
+  text-shadow: none !important;
+}
+
+#social #respond textarea.social-input {
+  max-width: 619px;
+}
+
+#respond #comment {
+  margin-bottom: 0;
+}
+
+#social .form-submit {
+  height: auto;
+}
+
+#reply-title {
+  padding-left: 0px !important;
+  background: none !important;
+}
+
+#social {
+    font-family:  @font-family-sans-serif !important;
+}
+
+#social .social-comment {
+  width: 100% !important;
+}
+
+#nav-below .icon-singles-left,
+#nav-below .icon-singles-right{
+  display: none;
+}
+
+.single #nav-below .nav-previous {
+  padding-left: 0;
+}
+
+.single #nav-below .nav-next {
+  padding-right: 0;
+}
+
+#social small.social-psst {
+  padding-left: 10px;
+}
+
+.post-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  margin-top: 20px;
+}
+
+.post-col .thepostcont {
+  margin-left: 0;
+  width: 100%;
+}
+
+.navigation-bottom {
+  margin-top: 20px;
+}
+
+.blogarchive.blog-rs .post-listing,
+.blogarchive .post-listing{
+  padding-top: 0;
+  margin: 33px 0 20px 5px;
+  .postcontent {
+    margin-top: 20px;
+  }
+}
+
+.navigation-blog {
+  a {
+    color: #ffffff;
+    background-color: @c-brand;
+    border: none;
+    &:hover {
+      background-color: @c-brand-text;
+      text-decoration: none;
+      color: #ffffff !important;
+    }
+  }
+}
+
+@media (max-width: @media-xs-max-width) {
+  .entry-team p {
+    clear: both;
+    margin-left: 0;
+  }
+}
+
+.dimagi-blog-icon {
+  background: no-repeat center;
+  background-image: url('/wp-content/themes/anya-installable/images/dimagi_icon.png');
+  .make-bg-size(cover);
+  width: 400px;
+  height: 400px;
+}
+
+.postcontent .meta-list li.date-author,
+.postcontent .meta-list li.post-author {
+  white-space: normal;
+}
+

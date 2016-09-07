@@ -1,0 +1,103 @@
+/*
+  Theme Name: Anya
+  Author: DesignareThemes
+  Author URI: http://designarethemes.net
+  
+  caroussel CSS
+*/
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    margin: 10px 0 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 17px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-next-horizontal{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #fff url(../img/sprite.png) -158px -107px;
+    left: 30px;
+    opacity: 1;
+    -webkit-border-radius: 0;	
+    border-radius: 0;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.jcarousel-next-horizontal:hover,
+.jcarousel-next-horizontal:focus {
+    opacity: 1;
+    background: #4B4B4B url(../img/sprite.png) -189px -107px;
+}
+
+.jcarousel-next-horizontal:active {
+    opacity: 0.1;
+}
+.jcarousel-next-disabled-horizontal,
+.jcarousel-next-disabled-horizontal:hover,
+.jcarousel-next-disabled-horizontal:focus,
+.jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    opacity: 0.1;
+}
+.jcarousel-prev-horizontal {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: #fff url(../img/sprite.png) -94px -107px;
+    left: -3px !important;
+    opacity: 1;
+    -webkit-border-radius: 0;	
+    border-radius: 0;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+    float: left;
+}
+.jcarousel-prev-horizontal:hover, 
+.jcarousel-prev-horizontal:focus {
+    opacity: 1;
+    background: #4B4B4B url(../img/sprite.png) -123px -107px;
+}
+
+.jcarousel-prev-horizontal:active {
+    opacity: 0.1;
+}
+
+.jcarousel-prev-disabled-horizontal,
+.jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    opacity: 0.1;
+}
+.anyatitle .carousel-control:hover{border: 1px solid #4B4B4B;}
