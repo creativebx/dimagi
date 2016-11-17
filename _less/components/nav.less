@@ -1,0 +1,174 @@
+.nav-page {
+  padding-bottom: 6px;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  &.nav-header {
+    font-size: 12px;
+    margin-right: 40px;
+    color: @c-neutral-bg;
+  }
+
+  a {
+    .transition(background-color .5s);
+    line-height: 48px;
+    color: #ffffff;
+    background-color: @c-neutral;
+    display: block;
+    padding: 0 20px;
+
+    &:hover {
+      text-decoration: none;
+      color: #ffffff !important;
+      background-color: @c-neutral-text;
+    }
+  }
+}
+
+.nav-header {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.pagenav-container-color-cool-dark-accent {
+  .nav li a {
+    background-color: @c-dark-cool-accent;
+    &:hover {
+      background-color: @c-dark-cool-accent-text;
+    }
+  }
+
+  .nav li .nav-header {
+    color: @c-dark-cool-accent-bg;
+  }
+}
+
+.pagenav-container-color-cool-light-accent {
+  .nav li a {
+    background-color: @c-light-cool-accent;
+    &:hover {
+      background-color: @c-light-cool-accent-text;
+    }
+  }
+
+  .nav li.nav-header {
+    color: @c-light-cool-accent-bg;
+  }
+}
+
+.pagenav-container-color-attn-pos {
+  .nav li a {
+    background-color: @c-att-pos;
+    &:hover {
+      background-color: @c-att-pos-text;
+    }
+  }
+
+  .nav li.nav-header {
+    color: @c-att-pos-bg;
+  }
+}
+
+.pagenav-container-color-brand-primary {
+  .nav li a {
+    background-color: @c-dark-warm-accent;
+    &:hover {
+      background-color: @c-dark-warm-accent-text;
+    }
+  }
+
+  .nav li.nav-header {
+    color: @c-dark-warm-accent-bg;
+  }
+}
+
+.dl-menuwrapper ul {
+  background-color: @c-bg !important;
+  li {
+    position: relative;
+  }
+  li a {
+    color: @c-text;
+    font-size: 12px;
+    &:hover {
+      text-decoration: none;
+      border: none;
+      background-color: @c-brand !important;
+      color: #ffffff;
+    }
+  }
+  li.current-menu-item > a,
+  li.current-menu-parent > a{
+    border: none;
+    background-color: @c-neutral-bg !important;
+    &:hover {
+      background-color: @c-neutral-bg !important;
+    }
+  }
+  .gosubmenu {
+    background-color: @c-brand;
+    color: #ffffff;
+    border: none;
+    height: 46px;
+    line-height: 46px;
+    top: 0 !important;
+    border-radius: 0px;
+    width: 55px;
+    right: 0px;
+
+    &:hover {
+      background-color: @c-brand-text;
+      color: #ffffff;
+    }
+  }
+  .dl-back > a {
+    color: #ffffff !important;
+    border: none;
+    &:hover {
+      background-color: @c-brand-text !important;
+    }
+  }
+  .current_page_parent a {
+    border: none;
+  }
+
+  .dl-submenu-smart {
+    border: none;
+  }
+}
+
+.dl-submenu-smart li a {
+  border: none;
+  &:hover {
+    color: #ffffff !important;
+  }
+}
+
+@media (max-width: @media-xs-max-width) {
+  .nav-page .nav-header {
+    line-height: 40px;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .nav li {
+    display: block;
+    font-size: 20px !important;
+  }
+
+  .team-header,
+  .header-sectors {
+    font-size: 28px !important;
+  }
+
+  .health_custom .posts_row {
+    padding-bottom: 0px;
+  }
+
+  .wpb_text_column > .wpb_wrapper .health_custom section {
+    margin-bottom: 0px !important;
+  }
+}

@@ -1,0 +1,25 @@
+<?php
+# Database Configuration
+define( 'DB_NAME', 'snapshot_dimagi' );
+define( 'DB_USER', 'root' );
+define( 'DB_PASSWORD', 'CHANGEME' );
+define( 'DB_HOST', '127.0.0.1' );
+define( 'DB_HOST_SLAVE', '127.0.0.1' );
+define('DB_CHARSET', 'utf8');
+define('DB_COLLATE', 'utf8_unicode_ci');
+$table_prefix = 'wp_';
+
+define('PWP_DOMAIN_CONFIG', '192.168.33.10' );
+define('WP_SITEURL','http://192.168.33.10');
+define('WP_HOME','http://192.168.33.10');
+define( 'WP_AUTO_UPDATE_CORE', false );
+
+define( 'WP_CACHE', TRUE );
+define( 'PWP_NAME', 'dimagi' );
+umask(0002);
+
+# That's It. Pencils down
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+require_once(ABSPATH . 'wp-settings.php');
+

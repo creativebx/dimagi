@@ -1,0 +1,296 @@
+/*
+Theme Name: Anya Child
+Description: Child theme for the Anya Theme
+Author: Your name here
+Template: anya-installable
+*/
+@import url("../anya-installable/style.css");
+
+.everything .header_container {
+    background-color: #fff !important;
+    border-bottom: 1px solid #757575;
+}
+
+/* ADDED */
+
+.excerpt {
+	color: #fff;
+	clear:both; 
+	margin-bottom: 20px; 
+	width: 50%;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.partners_logos .vc_span3 .wpb_content_element {
+	height: 200px ;
+	width: 234px;
+	/*border: 2px solid #f58220;*/
+	padding:10px;
+	text-align: center;  
+    font: 0/0 a;
+	margin-bottom: 15px ;
+
+}
+
+.partners_logos .vc_span3 .wpb_content_element:before{    
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+
+.partners_logos .vc_span3 .wpb_content_element .wpb_wrapper {
+    display: inline-block;
+    vertical-align: middle;  
+    font: 16px/1 Arial sans-serif;       
+    float:none;
+    max-height: 100%;
+
+}
+.partners_logos .vc_span3 .wpb_content_element .wpb_wrapper a img {
+    margin: 0 auto ;
+}
+.partners_logos .vc_span6{
+	background-color: #104878;
+	color: #fff ;
+}
+.wpb_column > .wpb_wrapper .wpb_row:last-child {
+	margin-right: -15px ;
+}
+#big_footer{
+	border-top: 2px #CCC solid;
+}
+#footer_content .socialdiv-dark ul li a {
+	border: 1px solid #CCC;
+}
+#footer_content .menu {
+    margin-top: 0px;
+}
+#footer_content .menu li {
+    padding: 0px 0px;
+    background-position: -1006px -110px;
+}
+#footer_content a {
+	color: #FFFFFF ;
+}
+.socialdiv-dark .github:hover{ background: #000 url(img/sprite.png) -738px -259px no-repeat;}
+.socialdiv-dark .github{ background: #F7F7F7  url(img/sprite.png) -645px -259px no-repeat; }
+
+.data.author-image {
+	width: 68px;
+	padding: 2px;
+}
+.data.author-image a{
+	width: 64px;
+	height: 64px;
+	border-radius: 32px;
+	-webkit-border-radius: 32px;
+	-moz-border-radius: 32px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+	display:block;
+}
+ul.nav-team {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 20px 0 0 0;
+	list-style-type: none;
+
+}
+
+ul.nav-team a {
+
+	/*width: 31%;*/
+	/*color: white;
+	background-color: #f58220;*/
+	padding: 0.2em 0.6em;
+	border-right: 1px solid white;
+	text-align: center;
+	font-size: 16px ;
+
+}
+
+ul.nav-team a:hover {
+	/*background-color: #104878;
+	color: #FFFFFF ;*/
+}
+
+ul.nav-team li {
+	display: inline;
+	margin: 0;
+	font-size: 16px ;
+}
+.division-name h1{
+	margin: 95px 0 10px 0;
+}
+.teamimg a {
+display: block;
+height: 234px;
+overflow:hidden;
+}
+.teamimg img{
+	min-height: 234px ;
+	min-width: 234px ;
+	overflow: hidden;
+	display: block;
+}
+.teamimg{
+	text-align: center;
+	/*height: 234px;*/
+	height: 280px;
+	width:100%;
+	/*margin: 0 auto 10px auto;*/
+	margin: 0 auto 0px auto;
+	overflow: hidden;
+	background-color: #F58220;
+}
+.teamimg:hover{
+	background-color: #104878;
+}
+.uber-grid-hover-text{
+	color:#FFF ;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.custom_same_space{
+	margin-top: 33px;
+}
+
+.cuctom_img_margin .wpb_wrapper .alignnone{
+	margin-top: 20px ;
+}
+
+.custom_box_margin {
+margin-top: -100px;
+}
+
+.teamimg{
+	border-radius: 5px ;
+}
+
+.page_info_title_s2{
+	text-align: left;
+	font-size: 22px ;
+}
+
+.data_type div.post_type {
+	display: none;
+}
+
+.thepostcont span.readmore{
+	display: none;
+}
+.the_title h2 a{
+	font-weight: 600 ;
+}
+
+.case_studies_wrap{
+	/*border: 2px solid #cccccc;*/
+	border-radius: 10px;
+	padding: 0px ;
+	width: 23% ;
+	margin-right: 2%;
+	height: 250px;
+	background-color: #FF8400;
+}
+.case_studies_wrap:hover{
+	background-color: #104878;
+}
+.case_studies_wrap h2{
+	font-size: 20px ;
+	line-height: 20px;
+	/*margin-bottom: 10px;*/
+}
+.case_studies_wrap h2 a{
+	color: #FFFFFF ;
+	font-weight: 600;
+	text-align: center;
+	padding: inherit 10px ;
+	display: block;
+	/*font-size: 20px ;*/
+	
+}
+.case_studies_wrap h2 a img{
+	width: 100%;
+	margin-top: -2px ;
+	border-radius: 10px 10px 0 0;
+	padding: 0px ;
+}
+.case_studies_wrap p{
+	color: #FFFFFF ;
+	text-align: center;
+	padding: inherit 10px ;
+	/*font-size: 20px ;*/
+}
+
+
+.wpb_column .wpb_wrapper h3 img.custom-icon-img,
+.wpb_column .wpb_wrapper h2 img.custom-icon-img{
+	margin-right: 15px ;
+}
+.wpb_wrapper ul li{
+	line-height: 1.4em;
+	color: #181715;
+}
+.comment-respond{
+	width:100% ;
+}
+#respond #comment{
+	width: 90% ;
+}
+.single #commentform .form-submit #submit{
+	padding: 0 15px ;
+}
+
+#big_footer .social-footer a:hover i {
+	text-decoration:none ;
+	color: white ;
+}
+
+.health_custom .recentPosts_style2 .posttype_date{
+	background-color: inherit ;
+}
+
+.health_custom .posttype_preview{
+	background-color: #FF8400;
+}
+
+.health_custom .posttype_preview:hover{
+	background-color: #104878;
+}
+
+/* removing white space in the /our-work/ page */
+.page-id-176243714 #wrapper{
+	min-height: inherit;
+}
+
+/*nepoznato duge iz gornjeg desnog*/
+#toppanel_trigger {
+    display: none;
+}
+
+.project_list_s2_style2 .date{
+	font-size: 13px ;
+}
+
+.page-template-blog-template .recentcomments .comment-author-link a.url::before {
+    content: "@";
+}
+.events-list ul,.events-list li{
+	list-style: none ;
+}
+.case-studies-list h2 a{
+	font-size: 12px ;
+}
+.cs-subtitle{
+	font-size: 11px ;
+	line-height: 10px;
+	font-style: italic;
+}
